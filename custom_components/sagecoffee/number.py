@@ -45,7 +45,7 @@ NUMBER_DESCRIPTIONS: tuple[SageCoffeeNumberEntityDescription, ...] = (
     SageCoffeeNumberEntityDescription(
         key="work_light_brightness",
         translation_key="work_light_brightness",
-        native_min_value=1,
+        native_min_value=0,
         native_max_value=100,
         native_step=10,
         value_fn=lambda state: state.get("work_light_brightness"),
